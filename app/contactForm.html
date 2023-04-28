@@ -57,7 +57,7 @@ if(isset($_POST['submitForm']))
     $headers .= "Reply-To: $User_email\r\n";
 
 
-    $secretKey = "6LeXhsYlAAAAAK4DJ5zRv79En82zjeUuu4pQKYQO";
+    $secretKey = "6LfVMsYlAAAAAFy11WLCHYwNNxQVIqRcJjuIJ-O4";
     $responseKey = $_POST['g-recaptcha-response'];
     $UserIP =$_SERVER['REMOTE_ADDR'];
     $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$UserIP";
@@ -90,7 +90,7 @@ if(isset($_POST['submitForm']))
           <textarea name="message" id="" placeholder="Enter your message here!" cols="30" rows="10" required></textarea>
         </div>
         <!-- RECAPTCHA -->
-        <div class="g-recaptcha" data-sitekey="6LeXhsYlAAAAAAhU18vcLGTwWwX_Rs3sGlFVkZeZ" required></div>
+        <div class="g-recaptcha" data-sitekey="6LfVMsYlAAAAAKbBCAFQgeg88YY879wgBzj02cmK" required></div>
         <div class="button">
           <input type="submit" value="Send Now" name="submitForm">
         </div>
